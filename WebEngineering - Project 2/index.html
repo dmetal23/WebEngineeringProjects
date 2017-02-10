@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<title>Sign Up</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="lab2.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Comp 484 Lab #2</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Sign Up</a></li>
+        <li><a href="privacy.html">Privacy Agreement</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-square">Search Google</button>
+        <button type="submit" class="btn btn-square">Search Website</button>
+      </form>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+	<div class="jumbotron">
+		<img src="http://i.imgur.com/IXpXE19.gif" class="img-circle" height="125" width="200" style="float:left">
+  		<h1>Comp 484 Lab #2</h1> 
+  			<p>By Daniel Rojas</p> 
+	</div>
+
+	<div class="container" id="form-container">
+  		<h2>Join my Website today! Please fill out the following information: </h2>
+  			<form class="form-horizontal" action ="action_page.html" method="POST">
+  				<div class="form-group">
+      				<label for="firstname">First Name:</label>
+      				<input required type="firstname" class="form-control" id="firstname" placeholder="Enter First Name" autofocus>
+    			</div>
+    			<div class="form-group">
+      				<label for="lastname">Last Name:</label>
+      				<input required type="lastname" class="form-control" id="lastname" placeholder="Enter Last Name">
+    			</div>
+    			<div class="form-group">
+      				<label for="email">Email:</label>
+      				<input required type="email" class="form-control" id="email" placeholder="Enter email">
+    			</div>
+    			<div class="form-group">
+      				<label for="pwd">Password:</label>
+      				<input required type="password" class="form-control" id="pwd" placeholder="Enter password">
+    			</div>
+    			<div class="form-group">
+      				<label for="pwd2">Re-enter Password:</label>
+      				<input required type="password" class="form-control" id="pwd2" placeholder="Re-enter password">
+    			</div>
+    			<div class="form-group">
+      				<label for="birthday">Birthday:</label>
+      				<input required type="birthday" class="form-control" id="birthday" placeholder="January 1, 1998">
+    			</div>
+    			<div class="form-group">
+      				<label for="major">College Major:</label>
+      				<select required name="datalist">
+                		<option value="Civil Engineering">Civil Engineering</option>
+                		<option value="Computer Engineering">Computer Engineering</option>
+                		<option value="Computer Science" selected>Computer Science</option>
+                		<option value="Computer Information Technology">Computer Information Technology</option>
+                		<option value="Electrical Engineering">Electrical Engineering</option>
+                		<option value="Engineering Management">Engineering Management</option>
+                		<option value="Manufacturing Systems Engineering">Manufacturing Systems Engineering</option>
+                		<option value="Mechnical Engineering">Mechnical Engineering</option>
+        			</select>
+    			</div>
+          <div class="form-group">
+              <label for="color">Favorite Color:</label>
+              <input required type="color" class="form-control" id="favcolor">
+          </div>
+          <div class="form-group">
+              <label for="major">Number of Years in College:</label>
+              <select required name="datalist">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5+">5+</option>
+              </select>
+          </div>
+          <div class="form-group">
+              <label for="telephone">Phone Number:</label>
+              <input required type="tel" class="form-control" id="telephone" placeholder="###-###-####">
+          </div>
+          <div class="form-group">
+              <label for="url">Link to your homepage:</label>
+              <input required type="url" class="form-control" id="url" placeholder="www.google.com">
+          </div>
+          <div class="form-group">
+              <label for="experience">Years of experience:</label><br>
+              <input type="radio" name="experience" value="0-5" checked> 0-5<br>
+              <input type="radio" name="experience" value="5-10"> 5-10<br>
+              <input type="radio" name="experience" value="10-15"> 10-15<br>
+              <input type="radio" name="experience" value="15-20"> 15-20<br>
+              <input type="radio" name="experience" value="20+"> 20+<br>
+          </div>
+          <div class="form-group">
+              <label for="url">Skill level in your Major:</label>
+              <input required type="number" name="quantity" min="1" max="10">
+          </div>
+          <div class="form-group">
+              <label for="url">Contact Preference:</label><br>
+              <input type="checkbox" name="op1" value="op1"> I would like to receive emails about new products and offers.<br>
+              <input type="checkbox" name="op2" value="op2"> I would like to receive emails about my account and membership. <br>
+              <input type="checkbox" name="op3" value="op3"> I would like to receive mail.  <br>
+          </div>
+
+   			 	<button type="submit" class="btn btn-default">Sign Up</button>
+          <button type="reset" class="btn btn-default">Reset</button>
+  			</form>
+	</div>
+
+	<br>
+
+<footer id="footer">
+        <a href="privacy.html">&copy Copyright 2016, INC. ALL Rights Reserved </a>
+        <p id="p">Contact us at: <a href="mailto:daniel.rojas.677@my.csun.edu">
+        daniel.rojas.677@my.csun.edu</a>.</p>
+</footer>
+
+
+</body>
+</html>

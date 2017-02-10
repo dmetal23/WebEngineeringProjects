@@ -1,0 +1,201 @@
+body {
+	background-color: white;
+}
+
+* {
+	font-style: italic;
+	font-family: "Times New Roman";
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-menu {
+    display: none;
+    position: relative;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-menu a {
+    color: black;
+    padding: 0px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-menu a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: orange;
+}
+
+#mainbody {
+    background-image: url("http://i.imgur.com/nbtlerW.jpg");
+    background-repeat: repeat-y;
+}
+
+li {
+	font-style: oblique;
+}
+
+/*OUR MEDIA QUERIES FOR RESPONSIVE RESOLUTION CHANGES */
+
+@media only screen and (min-width: 1025px) {
+    .privacyArt {
+        background-color: skyblue;
+        column-count: 4;
+        column-gap: 40px;
+        text-align: justify;
+    }
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1025px) {
+    .privacyArt {
+        background-color: skyblue;
+        column-count: 3;
+        column-gap: 30px;
+        text-align: justify;
+    }
+ }
+
+ @media only screen and (max-width: 480px) {
+    .privacyArt {
+        background-color: silver;
+        column-count: 2;
+        column-gap: 20px;
+        text-align: justify;
+    }
+ }
+
+ @media only screen and (min-width: 700px) and (max-width: 900px) {
+    #privacypara {
+        background-color: skyblue;
+        color: purple;
+        column-count: 3;
+        column-gap: 30px;
+        text-align: left;
+    }
+ }
+
+article {
+	background-image: url("http://images.clipartpanda.com/smiley-face-png-Smiley_Face.png");
+	background-repeat: no-repeat;
+	background-position: bottom left;
+}
+
+.jumbotron { 
+    background-color: #809fff; 
+    color: #ffffff;
+    text-align: right;
+    padding-right: 30px;
+}
+
+img {
+	padding-left:25px;
+	padding-right:25px;
+    position:absolute;
+    top: 120px;
+    left: 0px;
+}
+
+
+#aside-container {
+	background-color: orange;
+	background-size: 10px;
+
+}
+
+#favcolor {
+	font-family: "Comic Sans MS";
+	color: red;
+}
+
+#form-container {
+	background-color: white;
+	border-style: groove;
+	padding: 30px;
+}
+
+#about-container {
+	background-color: white;
+	border-style: hidden;
+}
+
+#privacy-container {
+	background-color: white;
+	border-style: none;
+	float: left;
+}
+
+#footer {
+	background-color: #809fff;
+	position: relative;
+}
+
+#privacy-container{
+	text-align: center;
+	font-size: 40px;
+}
+
+#privacyheader {
+	font-size: 40px;
+}
+
+#aboutheader {
+	font-size: 40px;
+	text-align: center;
+}
+
+#privacypara{
+	font-size: 20px;
+}
+
+#aboutpara{
+	font-size: 20px;
+}
+
+#contactpara{
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+}
+
+h3 {
+	font-size: 60px;
+	text-align: center;
+}
+
+h4 {
+	font-size: 40px;
+	text-align: center;
+}
+
+#p {
+	float: right; 
+}

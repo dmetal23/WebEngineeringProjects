@@ -1,0 +1,69 @@
+-- phpMyAdmin SQL Dump
+-- version 4.5.1
+-- http://www.phpmyadmin.net
+--
+-- Host: 127.0.0.1
+-- Generation Time: Dec 16, 2016 at 04:14 AM
+-- Server version: 10.1.16-MariaDB
+-- PHP Version: 5.6.24
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `finaldb`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `auth`
+--
+
+CREATE TABLE `auth` (
+  `userid` int(6) NOT NULL,
+  `username` varchar(60) NOT NULL,
+  `password` varchar(60) NOT NULL,
+  `firstName` varchar(60) NOT NULL,
+  `lastName` varchar(60) NOT NULL,
+  `email` varchar(60) NOT NULL,
+  `phone` varchar(60) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `auth`
+--
+
+INSERT INTO `auth` (`userid`, `username`, `password`, `firstName`, `lastName`, `email`, `phone`) VALUES
+(1, 'danielrojas', '098f6bcd4621d373cade4e832627b4f6', 'Daniel', 'Rojas', 'test@gmail.com', '8188888888'),
+(2, 'danielrojas2', '0e1b8b3ef01dad60a89c3b16b6eeff54', 'Daniel2', 'Rojas2', 'test2@gmail.com', '1234567890'),
+(3, 'asdf', '912ec803b2ce49e4a541068d495ab570', 'asdf', 'asdf', 'asdf@gmail.com', '99999999');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `auth`
+--
+ALTER TABLE `auth`
+  ADD PRIMARY KEY (`userid`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `auth`
+--
+ALTER TABLE `auth`
+  MODIFY `userid` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

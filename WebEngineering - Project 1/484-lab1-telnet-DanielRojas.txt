@@ -1,0 +1,65 @@
+Daniel Rojas
+Comp 484
+09/21/16
+
+
+Commands Entered:
+
+$ bash
+bash-3.2$ telnet microsoft.com 80
+Trying 191.239.213.197...
+Connected to microsoft.com (191.239.213.197).
+Escape character is '^]'.
+HEAD / HTTP/1.0
+
+
+Output:
+
+HTTP/1.1 301 Moved Permanently
+Cache-Control: private
+Content-Length: 23
+Content-Type: text/html
+Location: http://www.microsoft.com
+Server: Microsoft-IIS/8.5
+Set-Cookie: ASPSESSIONIDASDSTTRC=BEHLJGNAJBADHEPPFNDAFGDL; path=/
+X-Powered-By: ASP.NET
+Date: Wed, 21 Sep 2016 22:16:09 GMT
+Connection: close
+
+
+§ What commands you should enter in your terminal to make an http 1.0 request through telnet to www.microsoft.com?
+
+	- telnet microsoft.com 80
+
+
+§ What is the result?
+	
+	HTTP/1.1 301 Moved Permanently
+	Cache-Control: private
+	Content-Length: 23
+	Content-Type: text/html
+	Location: http://www.microsoft.com
+	Server: Microsoft-IIS/8.5
+	Set-Cookie: ASPSESSIONIDASDSTTRC=BEHLJGNAJBADHEPPFNDAFGDL; path=/
+	X-Powered-By: ASP.NET
+	Date: Wed, 21 Sep 2016 22:16:09 GMT
+	Connection: close
+
+
+§ What is the http response status? What does it mean?
+
+	- 301 Moved Permanently. 
+	- It means that the URL received should be updated. 
+
+
+§ What is the Set-Cookie string in the response and what is its purpose?
+	
+	- Set-Cookie: ASPSESSIONIDASDSTTRC=BEHLJGNAJBADHEPPFNDAFGDL;
+	- It's purpose is to specify to the web server which cookie we would like to be stored by sending an HTTP header.
+
+
+§ Repeat the steps with an intentional typo; for example instead of "1.0" or "1.1" as the http version in your request, send "1."What is the response? What is the http response status? What does it mean?
+
+	- Connection closed by foreign host.
+	- No http response status.
+	- It means that the correct HTTP header protocol could not be located and the connection was closed. 
